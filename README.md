@@ -4,8 +4,6 @@
 
 Recommend [NeoBundle](https://github.com/Shougo/neobundle.vim) for installation.
 
-### NeoBundle
-
 Add the following to your vimrc:
 
 ```vim
