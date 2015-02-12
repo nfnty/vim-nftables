@@ -5,5 +5,5 @@ function! s:DetectFiletype()
     endif
 endfunction
 
-au BufRead,BufNewFile *.conf call s:DetectFiletype()
+au BufRead,BufNewFile * call s:DetectFiletype()
 au BufRead,BufNewFile *.nft setl filetype=nftables
