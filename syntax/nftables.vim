@@ -24,9 +24,9 @@ syn keyword Type filter nat route
 syn keyword Type ether vlan arp ip ip6 tcp udp udplite sctp dccp ah esp ipcomp
 syn keyword Type ct
 syn keyword Type length protocol priority mark iif iifname iiftype oif oifname oiftype skuid skgid rtclassid
-syn keyword Type snat dnat masquerade redirect
 syn keyword Constant prerouting input forward output postrouting
 
+syn keyword Special snat dnat masquerade redirect
 syn keyword Special accept drop reject queue
 syn keyword Keyword continue return jump goto
 syn keyword Keyword counter log
