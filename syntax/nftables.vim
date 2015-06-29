@@ -21,7 +21,7 @@ syn keyword Function table chain
 syn keyword Statement type hook
 syn keyword Type ip ip6 inet arp bridge
 syn keyword Type filter nat route
-syn keyword Type ether vlan arp ip ip6 tcp udp udplite sctp dccp ah esp ipcomp
+syn keyword Type ether vlan arp ip ip6 tcp udp udplite sctp dccp ah esp ipcomp icmp
 syn keyword Type ct
 syn keyword Type length protocol priority mark iif iifname iiftype oif oifname oiftype skuid skgid rtclassid
 syn keyword Constant prerouting input forward output postrouting
