@@ -1,6 +1,5 @@
 function! s:DetectFiletype()
-    let first_line = getline(1)
-    if first_line == '#!/usr/bin/nft -f'
+    if index(['#!/usr/bin/nft -f', '#!/usr/sbin/nft -f', '#!/usr/bin/env nft -f'], getline(1)) != -1
         setl ft=nftables
     endif
 endfunction
