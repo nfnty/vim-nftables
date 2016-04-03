@@ -8,9 +8,11 @@ hi def link nftablesSet Keyword
 hi def link nftablesSetEntry Operator
 
 syn match nftablesNumber "\<[0-9A-Fa-f./:]\+\>" contains=nftablesMask,nftablesDelimiter
+syn match nftablesHex "\<0x[0-9A-Fa-f]\+\>"
 syn match nftablesDelimiter "[./:]" contained
 syn match nftablesMask "/[0-9.]\+" contained contains=nftablesDelimiter
 hi def link nftablesNumber Number
+hi def link nftablesHex Number
 hi def link nftablesDelimiter Operator
 hi def link nftablesMask Operator
 
