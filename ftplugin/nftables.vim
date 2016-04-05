@@ -15,8 +15,6 @@ setlocal comments=b:#
 setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 setlocal textwidth=99
 
-setlocal foldmethod=syntax
-
 let b:undo_ftplugin = "
     \ setlocal formatoptions< comments< commentstring<
     \|setlocal tabstop< shiftwidth< softtabstop< expandtab< textwidth<
