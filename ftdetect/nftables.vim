@@ -1,5 +1,5 @@
 function! s:DetectFiletype()
-    if index(['#!/usr/bin/nft -f', '#!/usr/sbin/nft -f', '#!/usr/bin/env nft -f'], getline(1)) != -1
+    if getline(1) =~# '^#!.*/nft\(\s\|$\)'
         setl ft=nftables
     endif
 endfunction
