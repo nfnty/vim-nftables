@@ -1,8 +1,8 @@
 function! s:DetectFiletype()
-    if index(['#!/usr/bin/nft -f', '#!/usr/sbin/nft -f', '#!/usr/bin/env nft -f'], getline(1)) != -1
-        setl ft=nftables
+    if getline(1) =~# '^#!\s*\%\(/\S\+\)\?/\%\(s\)\?bin/\%\(env\s\+\)\?nft\>'
+        setfiletype nftables
     endif
 endfunction
 
-au BufRead,BufNewFile * call s:DetectFiletype()
-au BufRead,BufNewFile *.nft setl filetype=nftables
+autocmd BufRead,BufNewFile * call s:DetectFiletype()
+autocmd BufRead,BufNewFile *.nft setfiletype nftables
