@@ -5,4 +5,4 @@ function! s:DetectFiletype()
 endfunction
 
 autocmd BufRead,BufNewFile * call s:DetectFiletype()
-autocmd BufRead,BufNewFile *.nft setfiletype nftables
+autocmd BufRead,BufNewFile *.nft,nftables.conf setfiletype nftables

@@ -1,4 +1,4 @@
-if exists("b:current_syntax")
+if exists('b:current_syntax')
     finish
 endif
 
@@ -33,4 +33,4 @@ syn keyword Special accept drop reject queue
 syn keyword Keyword continue return jump goto
 syn keyword Keyword counter log
 
-let b:current_syntax = "nftables"
+let b:current_syntax = 'nftables'
