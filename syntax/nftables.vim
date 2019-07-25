@@ -16,7 +16,7 @@ hi def link nftablesHex Number
 hi def link nftablesDelimiter Operator
 hi def link nftablesMask Operator
 
-syn region Comment start=/^\s*#/ end=/$/
+syn region Comment start=/#/ end=/$/
 syn region String start=/"/ end=/"/
 syn keyword Function flush
 syn keyword Function table chain
