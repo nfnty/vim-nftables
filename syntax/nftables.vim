@@ -31,7 +31,7 @@ syn keyword Constant prerouting input forward output postrouting
 syn keyword Special snat dnat masquerade redirect
 syn keyword Special accept drop reject queue
 syn keyword Keyword continue return jump goto
-syn keyword Keyword counter log
+syn keyword Keyword counter log limit
 syn keyword Keyword define
 
 let b:current_syntax = 'nftables'
