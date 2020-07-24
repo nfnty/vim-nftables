@@ -12,12 +12,10 @@ setlocal formatoptions-=t formatoptions+=croqnlj
 
 setlocal comments=b:#
 
-setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 setlocal textwidth=99
 
 let b:undo_ftplugin = '
     \ setlocal formatoptions< comments< commentstring<
-    \|setlocal tabstop< shiftwidth< softtabstop< expandtab< textwidth<
     \'
 
 let &cpoptions = s:save_cpo
