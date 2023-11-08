@@ -19,7 +19,7 @@ hi def link nftablesMask Operator
 syn region Comment start=/#/ end=/$/
 syn region String start=/"/ end=/"/
 syn keyword Function flush
-syn keyword Function table chain map
+syn keyword Function table chain map vmap set
 syn keyword Statement type hook
 syn keyword Type ip ip6 inet arp bridge
 syn keyword Type filter nat route
